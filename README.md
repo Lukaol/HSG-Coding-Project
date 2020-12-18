@@ -25,7 +25,7 @@ Before running the code, please do the following:
   
 3.	Open Pycharm and change your working directory to the folder created in step 1 (click on the right top on your file name -> choose “Edit Configurations…" -> change your script path to the corresponding folder)
 4.	Choose your python interpreter (click on the right top on your file name -> choose “Edit Configurations…"-> choose anaconda as your python interpreter)
-5.	Change your direction in the file "train_mask_detector.py" to the corresponding folder with the datasets (line 29) (e.g. DIRECTORY = r"C:\Users\XY\mask detector program\dataset”) If you open it as a project and all project files are in the same folder, this change is not necessary
+5.	Change your direction in the file "train_mask_detector.py" to the corresponding folder with the datasets (line 30) (e.g. DIRECTORY = r"C:\Users\XY\mask detector program\dataset”) If you open it as a project and all project files are in the same folder, this change is not necessary
 6.	Run the code "train_mask_detector.py" or "train_mask_detector_short_training.py" in order to train the model
 7.	Run the code "detect_mask_video.py" in order to apply the trained model
 
