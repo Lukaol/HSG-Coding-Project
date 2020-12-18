@@ -25,7 +25,7 @@ Before running the code, please do the following:
   
 3.	Open Pycharm and change your working directory to the folder created in step 1 (click on the right top on your file name -> choose “Edit Configurations…" -> change your script path to the corresponding folder)
 4.	Choose your python interpreter (click on the right top on your file name -> choose “Edit Configurations…"-> choose anaconda as your python interpreter)
-5.	Change your direction in the file "train_mask_detector.py" to the corresponding folder with the datasets (line 29) (e.g. DIRECTORY = r"C:\Users\XY\mask detector program\dataset”) If you gave all project files in the same folder, this change is not necessary
+5.	Change your direction in the file "train_mask_detector.py" to the corresponding folder with the datasets (line 29) (e.g. DIRECTORY = r"C:\Users\XY\mask detector program\dataset”) If you open it as a project and all project files are in the same folder, this change is not necessary
 6.	Run the code "train_mask_detector.py" or "train_mask_detector_short_training.py" in order to train the model
 7.	Run the code "detect_mask_video.py" in order to apply the trained model
 
@@ -59,9 +59,9 @@ This is how it looks on your computer if you successfully ran the code:
 
 **Sources**
 
-This program is based on the face mask detector by Balaji Srinivas https://github.com/balajisrinivas/Face-Mask-Detection. The dataset has also been downloaded from there. The program has been enhanced with different functionalities. User input in order to choose if the face mask detector should use the local webcam or a video has been added. Additionally, the user can choose to save the output.
+This program is based on the face mask detector by Balaji Srinivas https://github.com/balajisrinivas/Face-Mask-Detection. The dataset has also been downloaded from there. We have tweaked the learning process of the model and the program has also been enhanced with different functionalities. You are able to choose between using the local webcam or uploading a video that is saved on your computer. It is possible to save the output as a .avi video with your chosen filename and location.
 
 **Disclaimer**
 
-The program worked fine with PyCharm 2020 and Python 3.8 (64-bit) in December 2020. Running the code with other versions of Python or programs may cause errors. For example, TensorFlow is on working for Python 3.5-3.8 (64-bit). Moreover, we used TensorFlow 2.3.0 which is compatible with Python 3.8. For other Python versions you might change the TensorFlow Version. Further, the website links and the available data on these websites may have changed in the meantime.
+The program worked fine with PyCharm 2020 and Python 3.8 (64-bit) in December 2020. Running the code with other versions of Python or programs may cause errors. For example, TensorFlow is only working for Python 3.5-3.8 (64-bit). Moreover, we used TensorFlow 2.3.0 which is compatible with Python 3.9. For other Python versions you might change the TensorFlow Version. Further, the website links and the available data on these websites may have changed in the meantime.
 
