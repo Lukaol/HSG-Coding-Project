@@ -7,6 +7,7 @@ from tensorflow.keras.layers import Flatten
 from tensorflow.keras.layers import Dense
 from tensorflow.keras.layers import Input
 from tensorflow.keras.models import Model
+from tensorflow.keras.callbacks import EarlyStopping
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
 from tensorflow.keras.preprocessing.image import img_to_array
@@ -95,12 +96,14 @@ model.compile(loss="binary_crossentropy", optimizer=opt,
 
 # Training the output layer
 print("[INFO] training head...")
+es = EarlyStopping(monitor='val_loss', mode='min', verbose=1, patience=3, restore_best_weights=True)
 H = model.fit(
 	aug.flow(trainX, trainY, batch_size=BS),
 	steps_per_epoch=len(trainX) // BS,
 	validation_data=(testX, testY),
 	validation_steps=len(testX) // BS,
-	epochs=EPOCHS)
+	epochs=EPOCHS,
+	callbacks=es)
 
 # Making prediction on the test data
 print("[INFO] evaluating network...")
