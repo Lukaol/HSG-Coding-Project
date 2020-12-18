@@ -40,6 +40,7 @@ In the second code, we first implement a face detection. The model created in th
 
 **Results**
 Our model gave 99% accuracy for face mask detection after training:
+![alt text](https://github.com/Lukaol/HSG-Coding-Project/blob/main/Accuracyfacemaskdetector.png)
 
 We got the following accuracy/loss training curve plot:
 
