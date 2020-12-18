@@ -31,9 +31,10 @@ The mask detector consists of two files. The first one trains the model and the 
 
 1. a) train_mask_detector.py
 This code trains the mask detector model which will be used later to analyze a live video or captured video. First, it loads the dataset which consists of two folders with pictures: one with people wearing a mask and one with people without a mask. Afterwards, it will train the face mask detector by means of the labelled pictures. The program saves our detector as "mask_detector.model" and creates a plot with the losses and the accuracy of our model.
+To prevent overfitting to the training set, we introduced an early stop. When the validation loss does not decrease for three epochs, the model stops training and reverts to using the best weights.
 
    b) detect_mask_video_shorter_version.py
-This is a shorter version of the code that trains the mask detector model. It can be used instead of the train_mask_detector.py in order to safe time. To prevent overfitting to the training set, we introduced an early stop. When the validation loss does not decrease for three epochs, the model stops training and reverts to using the best weights. It works the same way as described in 1 a) 
+This is a shorter version of the code that trains the mask detector model. It can be used instead of the train_mask_detector.py in order to save time.  It works the same way as described in 1 a). The time for training was made shorter by introducing an Early Stop that terminates the training once the validation accuracy stops increasing meaningfully. 
 
 2.	detect_mask_video.py
 In the second code, we first implement a face detection. The model created in the other file is then loaded into our second program. Then, you can apply the trained program in the following two ways: it will give you the choice to either activate your camera and check if you are wearing a face mask or upload a video to which the mechanism is applied. It furthermore indicates the percentage of certainty whether it detects a face mask or not. At the end, the user can choose if he wants to save the video or not.
