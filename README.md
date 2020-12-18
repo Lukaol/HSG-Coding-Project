@@ -26,7 +26,7 @@ Before running the code, please do the following:
 3.	Open Pycharm and change your working directory to the folder created in step 1 (click on the right top on your file name -> choose “Edit Configurations…" -> change your script path to the corresponding folder)
 4.	Choose your python interpreter (click on the right top on your file name -> choose “Edit Configurations…"-> choose anaconda as your python interpreter)
 5.	Change your direction in the file "train_mask_detector.py" to the corresponding folder with the datasets (line 29) (e.g. DIRECTORY = r"C:\Users\XY\mask detector program\dataset”) If you gave all project files in the same folder, this change is not necessary
-6.	Run the code "train_mask_detector.py" or detect_mask_video_shorter_version.py in order to train the model
+6.	Run the code "train_mask_detector.py" or "train_mask_detector_shorter_version.py" in order to train the model
 7.	Run the code "detect_mask_video.py" in order to apply the trained model
 
 **Description**
@@ -37,7 +37,7 @@ The mask detector consists of two files. The first one trains the model and the 
 This code trains the mask detector model which will be used later to analyze a live video or captured video. First, it loads the dataset which consists of two folders with pictures: one with people wearing a mask and one with people without a mask. Afterwards, it will train the face mask detector by means of the labelled pictures. The program saves our detector as "mask_detector.model" and creates a plot with the losses and the accuracy of our model.
 To prevent overfitting to the training set, we introduced an early stop. When the validation loss does not decrease for three epochs, the model stops training and reverts to using the best weights.
 
-   b) detect_mask_video_shorter_version.py
+   b) train_mask_detector_shorter_version.py
 This is a shorter version of the code that trains the mask detector model. It can be used instead of the train_mask_detector.py in order to save time.  It works the same way as described in 1 a). The time for training was made shorter by introducing an Early Stop that terminates the training once the validation accuracy stops increasing meaningfully. 
 
 2.	detect_mask_video.py
