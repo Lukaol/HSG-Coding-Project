@@ -21,8 +21,8 @@ Before running the code, please do the following:
   iii.	Then, type "pip install -r requirements.txt" in order to install all the dependencies and required libraries defined in the document
 3.	Open Pycharm and change your working directory to the folder created in step 1 (click on the right top on your file name -> choose “Edit Configurations…" -> change your script path to the corresponding folder)
 4.	Choose your python interpreter (click on the right top on your file name -> choose “Edit Configurations…"-> choose anaconda as your python interpreter)
-5.	Change your direction in the file "train_mask_detector.py" to the corresponding folder with the datasets (line 29) (e.g. DIRECTORY = r"C:\Users\XY\mask detector program\dataset”) If you gave all project files in the same folder, this change is not necessary.
-6.	Run the code "train_mask_detector.py" in order to train the model
+5.	Change your direction in the file "train_mask_detector.py" to the corresponding folder with the datasets (line 29) (e.g. DIRECTORY = r"C:\Users\XY\mask detector program\dataset”) If you gave all project files in the same folder, this change is not necessary
+6.	Run the code "train_mask_detector.py" or detect_mask_video_shorter_version.py in order to train the model
 7.	Run the code "detect_mask_video.py" in order to apply the trained model
 
 **Description**
@@ -32,7 +32,7 @@ The mask detector consists of two files. The first one trains the model and the 
 1. a) train_mask_detector.py
 This code trains the mask detector model which will be used later to analyze a live video or captured video. First, it loads the dataset which consists of two folders with pictures: one with people wearing a mask and one with people without a mask. Afterwards, it will train the face mask detector by means of the labelled pictures. The program saves our detector as "mask_detector.model" and creates a plot with the losses and the accuracy of our model.
 
-   b) detect_mask_video_shorter version.py
+   b) detect_mask_video_shorter_version.py
 This is a shorter version of the code that traind the mask detecrot model. It can be used instead of the train_mask_detector.py in order to safe time. To prevent overfitting to the training set, we introduced an early stop. When the validation loss does not decrease for three epochs, the model stops training and reverts to using the best weights. 
 
 3.	detect_mask_video.py
