@@ -17,8 +17,11 @@ Before running the code, please do the following:
 1.	Download the folders "dataset" and "face_detector" as well as the document "requirements.txt" and safe it in a folder (e.g. mask detector program) on your computer
 2.	Install the necessary packages: 
   i. Open anaconda prompt 
+  
   ii.	Enter "cd" and copy paste your working directory to the document "requirements.txt" (e.g. cd C:\Users\XY\mask detector program”) and press enter 
+  
   iii.	Then, type "pip install -r requirements.txt" in order to install all the dependencies and required libraries defined in the document
+  
 3.	Open Pycharm and change your working directory to the folder created in step 1 (click on the right top on your file name -> choose “Edit Configurations…" -> change your script path to the corresponding folder)
 4.	Choose your python interpreter (click on the right top on your file name -> choose “Edit Configurations…"-> choose anaconda as your python interpreter)
 5.	Change your direction in the file "train_mask_detector.py" to the corresponding folder with the datasets (line 29) (e.g. DIRECTORY = r"C:\Users\XY\mask detector program\dataset”) If you gave all project files in the same folder, this change is not necessary
