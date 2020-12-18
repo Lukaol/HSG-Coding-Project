@@ -59,7 +59,7 @@ This is how it looks on your computer if you successfully ran the code:
 
 **Sources**
 
-This program is based on the face mask detector by Balaji Srinivas https://github.com/balajisrinivas/Face-Mask-Detection. The dataset has also been downloaded from there. We have tweaked the learning process of the model and the program has also been enhanced with different functionalities. You are able to choose between using the local webcam or uploading a video that is saved on your computer. It is possible to save the output as a .avi video with your chosen filename and location.
+We followed a tutorial by Balaji Srinivas, available at https://www.youtube.com/watch?v=Ax6P93r32KU&t. The dataset has been downloaded from his GitHUb repository - https://github.com/balajisrinivas/Face-Mask-Detection. We have tweaked the learning process of the model and the program has also been enhanced with different functionalities. You are able to choose between using the local webcam or uploading a video that is saved on your computer. It is possible to save the output as a .avi video with your chosen filename and location.
 
 **Disclaimer**
 
