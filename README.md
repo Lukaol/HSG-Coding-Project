@@ -39,13 +39,17 @@ This is a shorter version of the code that trains the mask detector model. It ca
 In the second code, we first implement a face detection. The model created in the other file is then loaded into our second program. Then, you can apply the trained program in the following two ways: it will give you the choice to either activate your camera and check if you are wearing a face mask or upload a video to which the mechanism is applied. It furthermore indicates the percentage of certainty whether it detects a face mask or not. At the end, the user can choose if he wants to save the video or not.
 
 **Results**
+
 Our model gave 99% accuracy for face mask detection after training:
+
 ![alt text](https://github.com/Lukaol/HSG-Coding-Project/blob/main/Accuracyfacemaskdetector.png)
 
 We got the following accuracy/loss training curve plot:
+
 ![alt text](https://github.com/Lukaol/HSG-Coding-Project/blob/main/Accuracylossplot.png)
 
 This is how it looks on your computer if you successfully ran the code:
+
 ![alt text](https://github.com/Lukaol/HSG-Coding-Project/blob/main/TheGIF.gif)
 
 **Sources**
@@ -53,5 +57,6 @@ This is how it looks on your computer if you successfully ran the code:
 This program is based on the face mask detector by Balaji Srinivas https://github.com/balajisrinivas/Face-Mask-Detection. The dataset has also been downloaded from there. The program has been enhanced with different functionalities. User input in order to choose if the face mask detector should use the local webcam or a video has been added. Additionally, the user can choose to save the output.
 
 **Disclaimer**
+
 The program worked fine with PyCharm 2020 and Python 3.8 (64-bit) in December 2020. Running the code with other versions of Python or programs may cause errors. For example, TensorFlow is on working for Python 3.5-3.8 (64-bit). Moreover, we used TensorFlow 2.3.0 which is compatible with Python 3.8. For other Python versions you might change the TensorFlow Version. Further, the website links and the available data on these websites may have changed in the meantime.
 
