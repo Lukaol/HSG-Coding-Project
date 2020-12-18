@@ -5,7 +5,7 @@ Please read this README before running the code. You will find all information i
 
 This is a machine learning project for Python of Matthias Brüderlin, Daan Friese, Oleg Lukanin, Celia Vetter and Joel Weibel. The project was created for the course Skills: Programming with Advanced Computer Languages at the University of St.Gallen. The goal of the project was to create a real time face mask detector using Python, Keras, OpenCV and MobileNet. The program can recognize if somebody is wearing a face mask, either on a live video or on a recorded video and allows the user to save the video with the corresponding results.
 
-**Pre-requisits**
+**Prerequisites**
 
 This program is written for Python. The following versions have been used to run it:
 1. Python 3.8 from Anaconda (64-bit)
