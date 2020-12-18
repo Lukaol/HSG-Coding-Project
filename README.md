@@ -1,4 +1,4 @@
-# Face Mask Detector-
+# Face Mask Detector
 Please read this README before running the code. You will find all information in order to run the code below.
 
 **About**
